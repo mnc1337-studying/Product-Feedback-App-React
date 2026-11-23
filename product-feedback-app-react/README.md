@@ -2,7 +2,7 @@
 
 A component-based web application designed for displaying, filtering, and sorting user feedback. Built with React and Vite, preserving semantic HTML5 markup and a modular SCSS architecture (7-1 Pattern) using the BEM methodology.
 
-Demo version: [Product Feedback App (React)]https://product-feedback-app-react-mnc1337.netlify.app.
+Demo version: [Product Feedback App (React)](https://product-feedback-app-react-mnc1337.netlify.app).
 
 ---
 
