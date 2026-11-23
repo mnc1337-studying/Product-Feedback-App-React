@@ -1,6 +1,5 @@
-export const SidebarHeader = () => {
-    const classNameBase = "sidebar";
-
+export const SidebarHeader = ({ classNameBase }) => {
+    
     return (
         <div className={`${classNameBase}__header`}>
             <div className={`${classNameBase}__brand`}>

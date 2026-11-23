@@ -1,14 +1,19 @@
+import { Tag } from "./Tag.jsx";
+
 export const FilterTags = () => {
+    const classNameBase = "filter-tags";
     const tags = ["All", "UI", "UX", "Enhancement", "Bug", "Feature"];
-    
+
+    const tagsItems = tags.map(tag => (
+        <li key={tag}>
+            <Tag isActive={tag === "All"}>{tag}</Tag>
+        </li>
+    ));
+
     return (
-        <nav className="filter-tags">
-            <ul className="filter-tags__list">
-                {tags.map((tag) => (
-                    <li key={tag}>
-                        <button className={tag === "All" ? "tag tag--active" : "tag"}>{tag}</button>
-                    </li>
-                ))}
+        <nav className={classNameBase}>
+            <ul className={`${classNameBase}__list`}>
+                {tagsItems}
             </ul>
         </nav>
     );

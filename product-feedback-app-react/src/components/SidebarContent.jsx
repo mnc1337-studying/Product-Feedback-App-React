@@ -1,9 +1,9 @@
 import { FilterTags } from "./FilterTags.jsx";
 import { Roadmap } from "./Roadmap.jsx";
 
-export const SidebarContent = () => {
+export const SidebarContent = ({ classNameBase }) => {
     return (
-        <div className="sidebar__content">
+        <div className={`${classNameBase}__content`}>
             <FilterTags />
             <Roadmap />
         </div>
