@@ -1,0 +1,27 @@
+@use "../abstract/variables" as variables;
+
+
+.tag {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: variables.$color-light-blue-1;
+    color: variables.$color-blue;
+    font-size: 13px;
+    font-weight: variables.$font-weight-semibold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+        background-color: #cfd7ff;
+    }
+
+    &--active {
+        background-color: variables.$color-blue;
+        color: variables.$color-white;
+
+        &:hover {
+            background-color: variables.$color-blue;
+        }
+    }                   
+}

@@ -1,0 +1,76 @@
+@use "../abstract/variables" as variables;
+
+
+.roadmap {
+    background-color: variables.$color-white;
+    padding: 24px;
+    border-radius: 10px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        font-size: 18px;
+        color: variables.$color-dark-slate;
+        font-weight: variables.$font-weight-bold;
+    }
+
+    &__link {
+        font-size: 13px;
+        font-weight: variables.$font-weight-semibold;
+        color: variables.$color-blue;
+        text-decoration: underline;
+
+        &:hover {
+            color: variables.$color-muted-blue;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        color: variables.$color-muted-blue;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 16px;
+        }
+
+        &--planned::before {
+            background-color: variables.$color-orange;
+        }
+
+        &--in-progress::before {
+            background-color: variables.$color-purple;
+        }
+
+        &--live::before {
+            background-color: variables.$color-sky-blue;
+        }
+    }
+
+    &__status {
+        margin-right: auto;
+    }
+
+    &__count {
+        font-weight: variables.$font-weight-bold;
+        color: variables.$color-muted-blue;
+    }
+}

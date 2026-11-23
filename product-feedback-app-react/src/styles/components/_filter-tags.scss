@@ -1,0 +1,14 @@
+@use "../abstract/variables" as variables;
+
+
+.filter-tags {
+    background-color: variables.$color-white;
+    padding: 24px;
+    border-radius: 10px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 8px;
+    }
+}
