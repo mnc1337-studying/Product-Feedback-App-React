@@ -1,6 +1,8 @@
-# Product Feedback App
+# Product Feedback App (React)
 
 A clean, modular web application designed for displaying, filtering, and sorting user product feedback. Originally built with semantic HTML5 and SCSS, and refactored into a component-based React architecture using Vite.
+
+Demo version: [Product Feedback App (React)]https://product-feedback-app-react-mnc1337.netlify.app.
 
 ---
 
