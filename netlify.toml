@@ -1,0 +1,11 @@
+# The app lives in a subfolder, so Netlify runs the build from there.
+[build]
+  base = "product-feedback-app-react"
+  # Install dependencies first so the vite binary is always available
+  command = "npm install && npm run build"
+  # Relative to the base directory: Vite writes the site to product-feedback-app-react/dist
+  publish = "dist"
+
+[build.environment]
+  # Vite 8 requires Node ^20.19 or >=22.12
+  NODE_VERSION = "22"
